@@ -1,0 +1,71 @@
+# Module 5
+#   Programming Assignment 6
+#       Prob-7.py
+
+# Mike Hart
+
+from graphics import *
+
+
+def main():
+    win = GraphWin("Problem 7", 420, 430)
+    face = Polygon(Point(210, 420), Point(125, 360), Point(95, 230), Point(110, 135), Point(230, 170), Point(350, 130), Point(350, 230), Point(325, 352), Point(247, 420))
+    hair = Polygon(Point(95, 230), Point(100, 45), Point(360, 55), Point(350, 230), Point(350, 130), Point(230, 170), Point(110, 135))
+    leftEar = Polygon(Point(115, 305), Point(85, 295), Point(35, 225), Point(52, 165), Point(90, 210))
+    rightEar = Polygon(Point(335, 315), Point(370, 305), Point(405, 235), Point(373, 165), Point(355, 210))
+    mouth = Rectangle(Point(182, 355), Point(270, 290))
+    teeth = Rectangle(Point(182, 310), Point(270, 290))
+    tongue = Polygon(Point(182, 355), Point(182, 330), Point(195, 310), Point(260, 310), Point(270, 320), Point(270, 355))
+    mouthSide1 = Polygon(Point(182, 330), Point(195, 310), Point(182, 310))
+    mouthSide2 = Polygon(Point(260, 310), Point(270, 320), Point(270, 310))
+    noseLine1 = Line(Point(220, 250), Point(220, 277))
+    noseLine2 = Line(Point(220, 277), Point(240, 277))
+    noseLine3 = Line(Point(240, 277), Point(225, 287))
+    noseLine4 = Line(Point(225, 287), Point(206, 273))
+    noseLine5 = Line(Point(206, 273), Point(220, 264))
+    leftEye = Polygon(Point(132, 245), Point(121, 220), Point(197, 235), Point(192, 245))
+    rightEye = Polygon(Point(250, 245), Point(245, 230), Point(330, 210), Point(315, 235))
+    leftPupil = Circle(Point(178, 230), 14)
+    rightPupil = Circle(Point(273, 225), 14)
+    leftEyebrow = Polygon(Point(110, 215), Point(105, 183), Point(215, 230), Point(215, 240))
+    rightEyebrow = Polygon(Point(230, 235), Point(230, 228), Point(350, 182), Point(350, 210))
+
+    face.draw(win)
+    face.setFill('tan')
+    hair.draw(win)
+    hair.setFill('black')
+    leftEar.draw(win)
+    rightEar.draw(win)
+    leftEar.setFill('tan')
+    rightEar.setFill('tan')
+    mouth.draw(win)
+    teeth.draw(win)
+    teeth.setFill('white')
+    tongue.draw(win)
+    tongue.setFill(color_rgb(201, 135, 139))
+    mouthSide1.draw(win)
+    mouthSide2.draw(win)
+    mouthSide1.setFill(color_rgb(113, 29, 34))
+    mouthSide2.setFill(color_rgb(113, 29, 34))
+    noseLine1.draw(win)
+    noseLine2.draw(win)
+    noseLine3.draw(win)
+    noseLine4.draw(win)
+    noseLine5.draw(win)
+    leftEye.draw(win)
+    rightEye.draw(win)
+    leftEye.setFill('white')
+    rightEye.setFill('white')
+    leftPupil.draw(win)
+    leftPupil.setFill('black')
+    rightPupil.draw(win)
+    rightPupil.setFill('black')
+    leftEyebrow.draw(win)
+    leftEyebrow.setFill('black')
+    rightEyebrow.draw(win)
+    rightEyebrow.setFill('black')
+
+    win.getMouse()
+    win.close()
+
+main()

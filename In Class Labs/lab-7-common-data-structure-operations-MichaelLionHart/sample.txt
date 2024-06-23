@@ -1,0 +1,6 @@
+This is a sample text file.
+
+It has a few lines of text.
+Some lines are blank.
+
+Others are not.
